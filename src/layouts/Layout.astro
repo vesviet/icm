@@ -1,0 +1,55 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import '@fontsource/poppins/300.css';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import '@fontsource/poppins/700.css';
+import '@fontsource/poppins/800.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "ICM Factory Direct – Vietnam sportswear factory with AI custom fit and 3D design, crafting high-quality performance sportswear for leading global brands." } = Astro.props;
+---
+<!doctype html>
+<html lang="en-US" class="scroll-smooth">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{title}</title>
+	<meta name="robots" content="max-image-preview:large" />
+	<meta name="description" content={description} />
+	<meta name="keywords" content="sportswear manufacturer, custom sportswear, Vietnam factory, ICM Factory Direct, private label, sublimation printing, golf apparel, headwear" />
+
+	<!-- Open Graph -->
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://icmfactorydirect.com/" />
+	<meta property="og:site_name" content="ICM Factory Direct" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content={title} />
+	<meta name="twitter:description" content={description} />
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+	<link rel="canonical" href="https://icmfactorydirect.com/" />
+</head>
+<body class="antialiased bg-white text-gray-900 font-sans selection:bg-blue-200 selection:text-blue-900">
+	<Header />
+
+	<main class="min-h-screen w-full">
+		<slot />
+	</main>
+
+	<Footer />
+</body>
+</html>

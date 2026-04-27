@@ -1,0 +1,11 @@
+/// <reference types="astro/client" />
+
+type Runtime = import('@astrojs/cloudflare').Runtime;
+
+declare global {
+  namespace App {
+    interface Locals extends Runtime {}
+  }
+}
+
+export {};
