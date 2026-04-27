@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Nunito Sans"', 'sans-serif'],
-        body: ['"Nunito Sans"', 'sans-serif'],
+        sans: ['"Fira Sans"', 'sans-serif'],
+        body: ['"Fira Sans"', 'sans-serif'],
       },
       colors: {
         navy: {
