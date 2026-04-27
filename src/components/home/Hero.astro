@@ -1,35 +1,36 @@
 ---
 ---
-<section class="relative w-full min-h-[85vh] flex items-center justify-center text-center overflow-hidden">
+<section class="relative w-full min-h-[85vh] flex items-center justify-start overflow-hidden">
   <!-- Background Image -->
   <div class="absolute inset-0 z-0">
-    <img src="/images/cropped-image-of-dressmaker-sewing-cloth-with-sewi-WHDDWPP-1.jpg" alt="Sportswear Manufacturing" class="w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-navy-900/70"></div>
+    <img src="/images/portrait-of-a-young-designer-standing-in-an-office-MX6TE8X-1.jpg" alt="Sportswear Manufacturing" class="w-full h-full object-cover object-center" />
+    <div class="absolute inset-0 bg-gradient-to-r from-navy-900/90 via-navy-900/60 to-transparent"></div>
   </div>
   
-  <div class="relative z-10 max-w-5xl mx-auto px-4 py-24 mt-10">
-    <div class="flex justify-center mb-8">
-      <img src="/images/hero/Ticker-Bluesign.png" alt="Bluesign System Partner" class="h-16 md:h-20 object-contain drop-shadow-lg" />
-    </div>
-    <p class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-bold mb-6">Your Partner in Excellence</p>
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-[1.1]">
-      Custom Sportswear Solutions<br class="hidden md:block" /> for Brand Owners
-    </h1>
-    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-16 leading-relaxed font-light">
-      Unlock the potential of your brand with ICM Factory Direct's unwavering commitment to innovation, quality, and collaboration.
-    </p>
-    
-    <div class="flex flex-col sm:flex-row justify-center items-center gap-10">
-      <a href="/documents/ICM-eBrochure-2025.pdf" target="_blank" class="bg-gold-400 text-navy-900 hover:bg-gold-500 px-10 py-4 rounded-full font-bold text-sm md:text-base transition-all uppercase tracking-wide min-w-[200px] shadow-[0_0_20px_rgba(251,191,36,0.3)] hover:shadow-[0_0_30px_rgba(251,191,36,0.6)]">
-        VIEW MORE
-      </a>
+  <div class="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 mt-10">
+    <div class="max-w-3xl">
+      <p class="text-white uppercase tracking-[0.2em] text-sm md:text-base font-bold mb-4">Your Partner in Excellence</p>
+      <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-[1.1]">
+        Custom Sportswear<br /> Solutions for Brand Owners
+      </h1>
+      <p class="text-lg md:text-xl text-gray-200 mb-10 leading-relaxed font-light max-w-2xl">
+        Unlock the potential of your brand with ICM Factory Direct's unwavering commitment to innovation, quality, and collaboration.
+      </p>
       
-      <div class="relative flex items-center justify-center w-24 h-24">
-        <div class="absolute w-20 h-20 bg-white/30 rounded-full animate-ping"></div>
-        <div class="absolute w-24 h-24 bg-white/10 rounded-full animate-pulse"></div>
-        <button id="hero-play-video" aria-label="Play Video" class="absolute z-10 w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-navy-900 transition-all border border-white/50 shadow-xl group focus:outline-none">
-          <svg class="w-8 h-8 ml-1 transform group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        </button>
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+        <a href="/documents/ICM-eBrochure-2025.pdf" target="_blank" class="bg-[#A33B5B] text-white hover:bg-[#8A324C] px-8 py-3.5 rounded-sm font-bold text-sm md:text-base transition-colors uppercase tracking-wide min-w-[160px] text-center">
+          VIEW MORE
+        </a>
+        
+        <div class="flex items-center gap-4">
+          <button id="hero-play-video" aria-label="Play Video" class="relative group flex items-center justify-center w-14 h-14 bg-transparent border-2 border-white rounded-full text-white hover:bg-white hover:text-navy-900 transition-colors focus:outline-none">
+            <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <div class="absolute inset-0 rounded-full border border-white animate-ping opacity-75"></div>
+          </button>
+          <span class="text-white font-bold text-sm uppercase tracking-wider cursor-pointer" onclick="document.getElementById('hero-play-video').click()">PLAY VIDEO</span>
+        </div>
+
+        <img src="/images/hero/Ticker-Bluesign.png" alt="Bluesign System Partner" class="h-12 object-contain ml-4 bg-navy-900/50 p-2 rounded-md" />
       </div>
     </div>
   </div>
