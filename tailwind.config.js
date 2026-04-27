@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'],
-        body: ['Open Sans', 'sans-serif'],
+        sans: ['"Nunito Sans"', 'sans-serif'],
+        body: ['"Nunito Sans"', 'sans-serif'],
       },
       colors: {
         navy: {
