@@ -1,0 +1,72 @@
+---
+---
+<section class="relative w-full min-h-[85vh] flex items-center justify-center text-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img src="/images/cropped-image-of-dressmaker-sewing-cloth-with-sewi-WHDDWPP-1.jpg" alt="Sportswear Manufacturing" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-navy-900/70"></div>
+  </div>
+  
+  <div class="relative z-10 max-w-5xl mx-auto px-4 py-24 mt-10">
+    <p class="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base font-bold mb-6">Your Partner in Excellence</p>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight mb-6 leading-[1.1]">
+      Custom Sportswear Solutions<br class="hidden md:block" /> for Brand Owners
+    </h1>
+    <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+      Unlock the potential of your brand with ICM Factory Direct's unwavering commitment to innovation, quality, and collaboration.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="/documents/ICM-eBrochure-2025.pdf" target="_blank" class="bg-gold-400 text-navy-900 hover:bg-gold-500 px-8 py-3.5 rounded-full font-bold text-sm md:text-base transition-all uppercase tracking-wide min-w-[200px]">
+        VIEW MORE
+      </a>
+      <button id="hero-play-video" class="group flex items-center justify-center gap-3 bg-transparent border-2 border-white hover:bg-white hover:text-navy-900 text-white px-8 py-3.5 rounded-full font-bold text-sm md:text-base transition-all uppercase tracking-wide min-w-[200px]">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        PLAY VIDEO
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Video Modal -->
+<div id="video-modal" class="fixed inset-0 z-[100] bg-black/90 hidden items-center justify-center opacity-0 transition-opacity duration-300">
+  <div class="relative w-full max-w-5xl px-4">
+    <button id="close-video" class="absolute -top-12 right-4 text-white hover:text-gold-400 p-2">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <div class="aspect-w-16 aspect-h-9 bg-black rounded-lg overflow-hidden shadow-2xl">
+      <iframe id="youtube-iframe" class="w-full h-full min-h-[50vh] md:min-h-[70vh]" src="" title="ICM Factory Direct Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const playBtn = document.getElementById('hero-play-video');
+    const closeBtn = document.getElementById('close-video');
+    const modal = document.getElementById('video-modal');
+    const iframe = document.getElementById('youtube-iframe');
+    
+    const videoUrl = "https://www.youtube.com/embed/5U7V1rIWez4?autoplay=1"; // Example ICM video ID, update as needed
+
+    playBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      iframe.src = videoUrl;
+      modal?.classList.remove('hidden');
+      // Small delay to allow display:block to apply before animating opacity
+      setTimeout(() => modal?.classList.remove('opacity-0'), 10);
+    });
+
+    const closeModal = () => {
+      modal?.classList.add('opacity-0');
+      setTimeout(() => {
+        modal?.classList.add('hidden');
+        iframe.src = "";
+      }, 300);
+    };
+
+    closeBtn?.addEventListener('click', closeModal);
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) closeModal();
+    });
+  });
+</script>

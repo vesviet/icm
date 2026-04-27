@@ -20,7 +20,9 @@
     "@astrojs/sitemap": "^3.4.2",
     "@fontsource-variable/inter": "^5.2.6",
     "@fontsource/poppins": "^5.2.7",
-    "astro": "^5.12.9"
+    "astro": "^5.12.9",
+    "cheerio": "^1.2.0",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^5.1.5",
