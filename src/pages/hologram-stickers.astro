@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Custom Hologram Stickers | ICM Factory Direct">
+  <section class="py-24 md:py-32 bg-gray-50 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="text-gold-500 font-bold uppercase tracking-[0.2em] text-sm mb-4">Brand Authenticity</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold text-navy-900 mb-6">Custom Hologram Stickers</h1>
+      <p class="text-xl text-gray-600 mb-10 leading-relaxed">
+        Protect your brand and guarantee authenticity with custom holographic security stickers.
+      </p>
+      
+      <div class="bg-white p-12 rounded-2xl shadow-lg text-left grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-2xl font-bold text-navy-900 mb-4">Why Holograms?</h3>
+          <p class="text-gray-600 mb-4">Counterfeiting is a growing issue for apparel brands. Hologram stickers provide a visually striking, hard-to-replicate layer of security that reassures your customers they are buying a genuine product.</p>
+          <ul class="space-y-2 text-gray-700 font-medium">
+            <li>✔ Tamper-evident options</li>
+            <li>✔ Serialized numbering available</li>
+            <li>✔ Custom 3D brand logos</li>
+            <li>✔ Perfect for hang tags or polybags</li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-center bg-gray-100 rounded-xl p-8 relative overflow-hidden group">
+          <!-- Animated gradient to simulate hologram -->
+          <div class="w-40 h-40 rounded-full bg-gradient-to-tr from-purple-400 via-pink-300 to-blue-400 animate-pulse flex items-center justify-center shadow-2xl transform group-hover:rotate-12 transition-transform duration-500">
+            <span class="text-white font-black text-2xl drop-shadow-md">AUTHENTIC</span>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-1000 -skew-x-12 translate-x-[-100%] group-hover:translate-x-[100%]"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
