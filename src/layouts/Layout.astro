@@ -2,12 +2,13 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-import '@fontsource/poppins/300.css';
-import '@fontsource/poppins/400.css';
-import '@fontsource/poppins/500.css';
-import '@fontsource/poppins/600.css';
-import '@fontsource/poppins/700.css';
-import '@fontsource/poppins/800.css';
+import '@fontsource/montserrat/400.css';
+import '@fontsource/montserrat/600.css';
+import '@fontsource/montserrat/700.css';
+import '@fontsource/montserrat/800.css';
+import '@fontsource/open-sans/300.css';
+import '@fontsource/open-sans/400.css';
+import '@fontsource/open-sans/600.css';
 
 interface Props {
 	title: string;
@@ -43,7 +44,7 @@ const { title, description = "ICM Factory Direct – Vietnam sportswear factory 
 
 	<link rel="canonical" href="https://icmfactorydirect.com/" />
 </head>
-<body class="antialiased bg-white text-gray-900 font-sans selection:bg-blue-200 selection:text-blue-900">
+<body class="antialiased bg-white text-gray-900 font-body selection:bg-blue-200 selection:text-blue-900">
 	<Header />
 
 	<main class="min-h-screen w-full">
