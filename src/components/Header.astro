@@ -39,11 +39,57 @@
       <!-- Desktop Navigation -->
       <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-white">
         <a href="/#why-icm" class="hover:text-gold-400 transition-colors">About Us</a>
-        <a href="/headwear/" class="hover:text-gold-400 transition-colors">Products</a>
-        <a href="/fabrics/" class="hover:text-gold-400 transition-colors">Customization</a>
+        
+        <div class="relative group py-5">
+          <button class="hover:text-gold-400 transition-colors flex items-center gap-1 focus:outline-none">
+            Products
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full left-0 w-56 bg-white shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top border-t-2 border-gold-400">
+            <div class="py-2">
+              <a href="/products/headwear" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Custom Headwear</a>
+              <a href="/products/mens-and-womens-wear" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Men's & Women's Wear</a>
+              <a href="/products/golf-resort" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Golf & Resort</a>
+              <a href="/products/cycling" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Cycling</a>
+              <a href="/products/triathlon" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Triathlon</a>
+              <a href="/products" class="block px-4 py-2.5 text-sm text-gold-500 hover:bg-gray-50 font-bold border-t border-gray-100 mt-1">View All Products</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative group py-5">
+          <button class="hover:text-gold-400 transition-colors flex items-center gap-1 focus:outline-none">
+            Customization
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full left-0 w-48 bg-white shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top border-t-2 border-gold-400">
+            <div class="py-2">
+              <a href="/fabrics" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Premium Fabrics</a>
+              <a href="/sublimation" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Sublimation Printing</a>
+              <a href="/laser-punching" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Laser Punching</a>
+              <a href="/reflective" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Reflective Details</a>
+              <a href="/hologram-stickers" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Hologram Stickers</a>
+              <a href="/hang-tags" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Hang Tags</a>
+            </div>
+          </div>
+        </div>
+
         <a href="/documents/ICM-eBrochure-2025.pdf" target="_blank" class="hover:text-gold-400 transition-colors">E-Brochures</a>
-        <a href="/3d-configurator/" class="hover:text-gold-400 transition-colors">High Tech</a>
-        <a href="/contact-us/" class="bg-gold-400 text-navy-900 px-5 py-2 rounded-full font-semibold hover:bg-gold-500 transition-colors">Contact Us</a>
+        
+        <div class="relative group py-5">
+          <button class="hover:text-gold-400 transition-colors flex items-center gap-1 focus:outline-none">
+            High Tech
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="absolute top-full right-0 w-48 bg-white shadow-xl rounded-b-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50 transform origin-top border-t-2 border-gold-400">
+            <div class="py-2">
+              <a href="/3d-configurator" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">3D Configurator</a>
+              <a href="/sizing-charts" class="block px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-gold-500 transition-colors">Sizing Charts</a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/contact-us/" class="bg-gold-400 text-navy-900 px-5 py-2.5 rounded-full font-bold hover:bg-gold-500 hover:scale-105 transition-all shadow-lg ml-2">Contact Us</a>
       </nav>
 
       <!-- Mobile Menu Button -->
