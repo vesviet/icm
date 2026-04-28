@@ -67,42 +67,6 @@ export const categories: Category[] = [
       { id: "skorts", name: "Skorts", image: "/images/products/golf/skorts.jpg" },
       { id: "golf-accessories", name: "Accessories", image: "/images/products/golf/golf-accessories.jpg" }
     ]
-  },
-  {
-    id: "cycling",
-    name: "Custom Cycling",
-    description: "High-performance aerodynamic custom cycling apparel for teams and clubs.",
-    image: "/images/products/cycling-hero.jpg",
-    pdfBrochure: "/documents/ICM-eBrochure-2025.pdf",
-    subcategories: [
-      { id: "jerseys", name: "Cycling Jerseys", image: "/images/products/cycling/jerseys.jpg" },
-      { id: "bibs-shorts", name: "Bibs & Shorts", image: "/images/products/cycling/bibs.jpg" },
-      { id: "jackets-vests", name: "Jackets & Vests", image: "/images/products/cycling/jackets.jpg" },
-      { id: "skinsuits", name: "Skinsuits", image: "/images/products/cycling/skinsuits.jpg" }
-    ]
-  },
-  {
-    id: "triathlon",
-    name: "Custom Triathlon",
-    description: "Advanced triathlon suits designed for speed, comfort, and endurance across all three disciplines.",
-    image: "/images/products/triathlon-hero.jpg",
-    pdfBrochure: "/documents/IRONMAN-COLLECTION.pdf",
-    subcategories: [
-      { id: "tri-suits", name: "Tri Suits", image: "/images/products/triathlon/suits.jpg" },
-      { id: "tri-tops", name: "Tri Tops", image: "/images/products/triathlon/tops.jpg" },
-      { id: "tri-shorts", name: "Tri Shorts", image: "/images/products/triathlon/shorts.jpg" }
-    ]
-  },
-  {
-    id: "running",
-    name: "Custom Running",
-    description: "Lightweight and breathable running gear tailored for casual runners and elite marathoners.",
-    image: "/images/products/running-hero.jpg",
-    subcategories: [
-      { id: "singlets", name: "Running Singlets", image: "/images/products/running/singlets.jpg" },
-      { id: "tees", name: "Running Tees", image: "/images/products/running/tees.jpg" },
-      { id: "shorts", name: "Running Shorts", image: "/images/products/running/shorts.jpg" }
-    ]
   }
 ];
 

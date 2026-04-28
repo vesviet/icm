@@ -9,6 +9,14 @@ import '@fontsource/fira-sans/600.css';
 import '@fontsource/fira-sans/700.css';
 import '@fontsource/fira-sans/800.css';
 
+import '@fontsource/nunito-sans/400.css';
+import '@fontsource/nunito-sans/600.css';
+import '@fontsource/nunito-sans/700.css';
+
+import '@fontsource/yantramanav/400.css';
+import '@fontsource/yantramanav/500.css';
+import '@fontsource/yantramanav/700.css';
+
 interface Props {
 	title: string;
 	description?: string;
@@ -32,11 +40,13 @@ const { title, description = "ICM Factory Direct – Vietnam sportswear factory 
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://icmfactorydirect.com/" />
 	<meta property="og:site_name" content="ICM Factory Direct" />
+	<meta property="og:image" content="https://icmfactorydirect.com/images/projects/2bu-brand.jpg" />
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
+	<meta name="twitter:image" content="https://icmfactorydirect.com/images/projects/2bu-brand.jpg" />
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -51,5 +61,20 @@ const { title, description = "ICM Factory Direct – Vietnam sportswear factory 
 	</main>
 
 	<Footer />
+
+	<script>
+		// Reveal animations on scroll
+		document.addEventListener('DOMContentLoaded', () => {
+			const observer = new IntersectionObserver((entries) => {
+				entries.forEach(entry => {
+					if (entry.isIntersecting) {
+						entry.target.classList.add('active');
+					}
+				});
+			}, { threshold: 0.15 });
+
+			document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+		});
+	</script>
 </body>
 </html>
