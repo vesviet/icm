@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+
+export function getStaticPaths() {
+  return [
+    { 
+      params: { fabric: 'high-performance-2' },
+      props: { 
+        title: 'High Performance',
+        images: [
+          { src: '/images/Drytec-White.jpg', label: 'Drytec White' },
+          { src: '/images/Drytech-HeiQ-Treated.jpg', label: 'Drytech HeiQ Treated' },
+          { src: '/images/Next-Air-Navy.jpg', label: 'Next Air Navy' },
+          { src: '/images/Art-Prey-Cool.jpg', label: 'Art Prey Cool' },
+          { src: '/images/Art-Flow.jpg', label: 'Art Flow' },
+          { src: '/images/Clima.jpg', label: 'Clima' },
+          { src: '/images/Climax.jpg', label: 'Climax' },
+          { src: '/images/Cold-Black.jpg', label: 'Cold Black' },
+          { src: '/images/GN-Pique-Black.jpg', label: 'GN Pique Black' },
+          { src: '/images/Miti-Shield-White.jpg', label: 'Miti Shield White' },
+          { src: '/images/Oxygen-Black.jpg', label: 'Oxygen Black' },
+          { src: '/images/Grappling-Thick.jpg', label: 'Grappling Thick' },
+          { src: '/images/Grappling-Thin.jpg', label: 'Grappling Thin' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: '100-cotton-2' },
+      props: { 
+        title: '100% Cotton',
+        images: [
+          { src: '/images/Non-Brush-Twill-Red.jpg', label: 'Non-Brush Twill Red' },
+          { src: '/images/Normal-Brush-Twill-Gray.jpg', label: 'Normal Brush Twill Gray' },
+          { src: '/images/Pangrim.jpg', label: 'Pangrim' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'polyester-2' },
+      props: { 
+        title: 'Polyester',
+        images: [
+          { src: '/images/Drytec-White.jpg', label: 'Drytec White' },
+          { src: '/images/Drytech-HeiQ-Treated.jpg', label: 'Drytech HeiQ Treated' },
+          { src: '/images/Super-Drytech.jpg', label: 'Super Drytech' },
+          { src: '/images/Microfiber.jpg', label: 'Microfiber' },
+          { src: '/images/Next-Air-Navy.jpg', label: 'Next Air Navy' },
+          { src: '/images/Superdry-White.jpg', label: 'Superdry White' },
+          { src: '/images/Teawon-Mesh.jpg', label: 'Teawon Mesh' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'trucker-mesh-2' },
+      props: { 
+        title: 'Trucker Mesh',
+        images: [
+          { src: '/images/Truker-Hard-Mesh.jpg', label: 'Truker Hard Mesh' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'poly-cotton-2' },
+      props: { 
+        title: 'Poly/Cotton',
+        images: [
+          { src: '/images/TC.jpg', label: 'TC' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'polyester-spandex-2' },
+      props: { 
+        title: 'Polyester/Spandex',
+        images: [
+          { src: '/images/AB-Grappling.jpg', label: 'AB Grappling' },
+          { src: '/images/Art-Prey-Cool.jpg', label: 'Art Prey Cool' },
+          { src: '/images/Art-Flow.jpg', label: 'Art Flow' },
+          { src: '/images/Carbon-Mesh.jpg', label: 'Carbon Mesh' },
+          { src: '/images/Clima.jpg', label: 'Clima' },
+          { src: '/images/Climax.jpg', label: 'Climax' },
+          { src: '/images/Cold-Black.jpg', label: 'Cold Black' },
+          { src: '/images/GN-Pique-Black.jpg', label: 'GN Pique Black' },
+          { src: '/images/Miti-Black.jpg', label: 'Miti Black' },
+          { src: '/images/Miti-Shield-White.jpg', label: 'Miti Shield White' },
+          { src: '/images/Oxygen-Black.jpg', label: 'Oxygen Black' },
+          { src: '/images/Revolutional-1.jpg', label: 'Revolutional' },
+          { src: '/images/Shiro-Revolutional.jpg', label: 'Shiro Revolutional' },
+          { src: '/images/Royas.jpg', label: 'Royas' },
+          { src: '/images/Grappling-Thick.jpg', label: 'Grappling Thick' },
+          { src: '/images/Grappling-Thin.jpg', label: 'Grappling Thin' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'polyester-rayon-2' },
+      props: { 
+        title: 'Polyester/Rayon',
+        images: [
+          { src: '/images/TR-Gray.jpg', label: 'TR Gray' },
+          { src: '/images/Yoga-TR-Pink.jpg', label: 'Yoga TR Pink' }
+        ]
+      }
+    },
+    { 
+      params: { fabric: 'wool-acrylic' },
+      props: { 
+        title: 'Wool/Acrylic',
+        images: [
+          { src: '/images/Wool-Acrylic.jpg', label: 'Wool Acrylic' }
+        ]
+      }
+    }
+  ];
+}
+
+const { title, images } = Astro.props;
+---
+
+<Layout title={`${title} | ICM Factory Direct`}>
+  <PageHero
+    title={title}
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Fabrics", href: "/fabrics" },
+      { label: title }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
+
+  <section class="py-[80px] bg-[#F9F9F9]">
+    <div class="max-w-[1340px] mx-auto px-[15px]">
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[30px]">
+        {images.map(img => (
+          <div class="group bg-white p-[10px] shadow-sm hover:shadow-md transition-shadow">
+            <div class="overflow-hidden mb-[15px] bg-[#F2F2F2] aspect-[4/3] flex items-center justify-center">
+              <img 
+                src={img.src} 
+                alt={img.label} 
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy" 
+              />
+            </div>
+            <h3 class="text-center font-heading text-[16px] font-semibold text-[#1D2F40]">
+              {img.label}
+            </h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

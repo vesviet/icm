@@ -1,27 +1,35 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout title="3D Configurator | ICM Factory Direct">
+  <PageHero
+    title="3D Configurator"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "3D Configurator" }
+    ]}
+    backgroundImage="/images/3D-Configurator.png"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
+
   <section class="py-[52.8px] bg-white">
     <div class="max-w-[1340px] w-full mx-auto px-[10px]">
-      <div class="text-center mb-10">
-        <h1 class="font-heading text-[52.8px] font-semibold leading-[1.2] text-[#1D2F40] mb-3">3D Configurator</h1>
-        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575]">Home / 3D Configutator</p>
-      </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
         <div>
           <h2 class="font-heading text-[38px] md:text-[44px] font-semibold leading-[1.2] text-[#1D2F40] mb-3">Design Your Own</h2>
           <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-6">Welcome to our 3D Configurator for Sportswear! With our innovative tool, you can unleash your creativity and design personalized sportswear that reflects your unique style and brand.</p>
           <div class="flex flex-wrap gap-3">
-            <a href="/contact-us/" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
+            <a href="https://obj.icmfactorydirect.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
             <a href="/contact-us/" class="inline-flex items-center justify-center border border-[#A6587C] text-[#A6587C] hover:bg-[#A6587C] hover:text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Contact us</a>
           </div>
         </div>
 
         <div class="overflow-hidden border border-[#A6587C]">
-          <img src="/images/professional-sewing-machine-close-up-modern-textil-F9BVMW7-1.jpg" alt="3D Configurator banner" class="w-full h-[300px] md:h-[360px] object-cover" />
+          <img src="/images/3D-Configurator.png" alt="3D Configurator banner" class="w-full h-[300px] md:h-[360px] object-cover" />
         </div>
       </div>
 
@@ -65,7 +73,7 @@ import Layout from '../layouts/Layout.astro';
         </ul>
 
         <div class="flex flex-wrap gap-3">
-          <a href="/contact-us/" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
+          <a href="https://obj.icmfactorydirect.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
           <a href="/contact-us/" class="inline-flex items-center justify-center border border-[#A6587C] text-[#A6587C] hover:bg-[#A6587C] hover:text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Contact us</a>
         </div>
       </div>

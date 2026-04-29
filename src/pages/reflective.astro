@@ -1,36 +1,82 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout title="Reflective Materials | ICM Factory Direct">
-  <section class="relative pt-32 pb-24 bg-navy-900 overflow-hidden text-center text-white">
-    <p class="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm mb-4">Safety Meets Style</p>
-    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Reflective Details</h1>
-    <p class="text-xl max-w-3xl mx-auto text-gray-300 font-light leading-relaxed">
-      High-visibility reflective elements designed for night runners, cyclists, and safety gear.
-    </p>
-  </section>
+  <!-- Hero Section -->
+  <PageHero
+    title="Reflective Details"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Reflective Details" }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
 
-  <section class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div class="order-2 md:order-1">
-          <h2 class="text-4xl font-extrabold text-navy-900 mb-6">Be Seen, Be Safe</h2>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            Integrating 3M™ Scotchlite™ and other premium reflective materials into your sportswear enhances visibility in low-light conditions. Whether it's a marathon singlet, cycling bibs, or activewear, reflective detailing is crucial.
-          </p>
-          <ul class="space-y-4 text-gray-700">
-            <li>✦ <strong>Reflective Heat Transfers:</strong> Logos and trims that shine bright when illuminated.</li>
-            <li>✦ <strong>Reflective Piping:</strong> Sewn into seams for a subtle daytime look and high nighttime visibility.</li>
-            <li>✦ <strong>Reflective Inks:</strong> Screen-printed designs with reflective properties.</li>
-          </ul>
+  <!-- Gallery Section - From XML -->
+  <section class="py-[80px] bg-white">
+    <div class="max-w-[1340px] mx-auto px-[15px]">
+      <h4 class="font-heading text-[24px] font-semibold leading-[1.3] text-[#1D2F40] mb-8 text-center">* These items are for show purposes only and not for sale.</h4>
+      
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Reflective In Peak -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-in-peak.png" alt="Reflective In Peak" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Reflective In Peak</h4>
+          </div>
         </div>
-        <div class="order-1 md:order-2">
-          <div class="bg-gray-800 p-8 rounded-2xl shadow-xl flex items-center justify-center h-80">
-            <!-- Simulated reflective effect -->
-            <div class="text-white font-black text-4xl tracking-widest uppercase drop-shadow-[0_0_15px_rgba(255,255,255,0.8)] opacity-90 hover:opacity-100 hover:drop-shadow-[0_0_30px_rgba(255,255,255,1)] transition-all cursor-pointer">
-              REFLECTIVE
-            </div>
+
+        <!-- Reflective In Peak - Darker -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-in-peak-darker.png" alt="Reflective In Peak - Darker" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Reflective In Peak - Darker</h4>
+          </div>
+        </div>
+
+        <!-- Reflective Logo in Peak -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-logo-in-peak.png" alt="Reflective Logo in Peak" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Reflective Logo in Peak</h4>
+          </div>
+        </div>
+
+        <!-- Reflective Closures -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-closures.jpg" alt="Reflective Closures" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Reflective Closures</h4>
+          </div>
+        </div>
+
+        <!-- Custom Cap Design used Reflective -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-custom-cap.jpg" alt="Custom Cap Design used Reflective" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Custom Cap Design used Reflective</h4>
+          </div>
+        </div>
+
+        <!-- Patch -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-patch.jpg" alt="Patch" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Patch</h4>
+          </div>
+        </div>
+
+        <!-- Tape -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/reflective-tape.jpg" alt="Tape" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Tape</h4>
           </div>
         </div>
       </div>

@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
+
+const charts = [
+  { src: '/images/13.jpg', label: 'New Colors', link: '/color-charts/new-colors' },
+  { src: '/images/987.jpg', label: 'Metallic Colors', link: '/color-charts/metallic-colors' },
+  { src: '/images/PMS.jpg', label: 'Pantone PMS Color Charts', link: '/color-charts/pantone-pms-color-charts' }
+];
+---
+
+<Layout title="Color Charts | ICM Factory Direct">
+  <PageHero
+    title="Color Charts"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Sublimation", href: "/sublimation" },
+      { label: "Color Charts" }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
+
+  <section class="py-[80px] bg-white">
+    <div class="max-w-[1340px] mx-auto px-[15px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+        {charts.map(chart => (
+          <div class="text-center group">
+            <a href={chart.link} class="block overflow-hidden rounded-[4px] shadow-lg border border-[#E0E0E0]">
+              <img 
+                src={chart.src} 
+                alt={chart.label} 
+                class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500" 
+                loading="lazy" 
+              />
+            </a>
+            <h3 class="font-heading text-[20px] font-semibold mt-4">
+              <a href={chart.link} class="text-[#1D2F40] hover:text-[#A6587C] transition-colors">
+                {chart.label}
+              </a>
+            </h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

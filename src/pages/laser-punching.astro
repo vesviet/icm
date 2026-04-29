@@ -1,45 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout title="Laser Cutting & Punching | ICM Factory Direct">
-  <section class="relative pt-32 pb-24 bg-navy-900 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <img src="/images/process/MG_8933-2.png" alt="Laser Cutting" class="w-full h-full object-cover opacity-30" />
-      <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-      <p class="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm mb-4">Precision Engineering</p>
-      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Laser Punching</h1>
-      <p class="text-xl max-w-3xl mx-auto text-gray-300 font-light leading-relaxed">
-        Enhance breathability and add technical aesthetics with precise laser-cut ventilation.
-      </p>
-    </div>
-  </section>
+  <!-- Hero Section -->
+  <PageHero
+    title="Laser Punching"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Laser Punching" }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
 
-  <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div class="relative">
-          <div class="aspect-w-4 aspect-h-3 bg-gray-100 rounded-2xl overflow-hidden shadow-2xl border border-gray-200">
-            <img src="/images/products/headwear/laser-cut-cap.jpg" alt="Laser Cut Cap" class="w-full h-full object-cover" onerror="this.src='/images/projects/2bu-brand.jpg'" />
-          </div>
+  <!-- Content Section - From XML -->
+  <section class="py-[80px] bg-white">
+    <div class="max-w-[1140px] mx-auto px-[15px]">
+      <!-- Title -->
+      <h4 class="font-heading text-[24px] font-semibold leading-[1.3] text-[#1D2F40] mb-4">Precision Fabrication for the World of Fabrics</h4>
+      
+      <!-- Image floated right -->
+      <div class="float-right ml-8 mb-4 w-[45%]">
+        <div class="overflow-hidden rounded-[4px] shadow-lg">
+          <img src="/images/laser.jpg" alt="Laser Punching" class="w-full h-auto object-cover" />
         </div>
-        <div>
-          <h2 class="text-4xl font-extrabold text-navy-900 mb-6">Advanced Ventilation</h2>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            Laser punching (or laser perforation) allows us to create precise, clean-cut micro-holes in technical fabrics and headwear. This process dramatically increases airflow exactly where athletes need it most.
-          </p>
-          <ul class="space-y-4">
-            <li class="flex items-center gap-3"><span class="text-gold-500 font-bold text-xl">✓</span><span class="text-gray-700">Strategic cooling zones</span></li>
-            <li class="flex items-center gap-3"><span class="text-gold-500 font-bold text-xl">✓</span><span class="text-gray-700">Clean, sealed edges that won't fray</span></li>
-            <li class="flex items-center gap-3"><span class="text-gold-500 font-bold text-xl">✓</span><span class="text-gray-700">Custom patterns and logo integrations</span></li>
-            <li class="flex items-center gap-3"><span class="text-gold-500 font-bold text-xl">✓</span><span class="text-gray-700">High-tech aesthetic appeal</span></li>
-          </ul>
-          <div class="mt-8">
-            <a href="/contact-us" class="bg-gold-400 text-navy-900 hover:bg-gold-500 px-8 py-3 rounded-full font-bold inline-block transition-transform transform hover:-translate-y-1">Discuss Technical Needs</a>
-          </div>
-        </div>
+      </div>
+      
+      <!-- Content that wraps around image -->
+      <div class="font-body text-[17.6px] leading-[1.7] text-[#4A4A4A] space-y-4">
+        <p>Unlike traditional fabric cutting methods, our advanced Laser Punching system brings a new level of accuracy, design flexibility, and efficiency to fabric processing. This cutting-edge technology ensures that every piece is crafted with meticulous precision, meeting the highest standards of quality and customization.</p>
+        
+        <p><strong>Here's how our Laser Punching process works for fabrics:</strong></p>
+        
+        <ol class="list-decimal list-inside space-y-2 ml-4">
+          <li><strong>Design Creation:</strong> Our expert designers use specialized software to translate your ideas into intricate digital patterns, ready for fabrication.</li>
+          <li><strong>Material Preparation:</strong> We carefully prepare the fabric, ensuring proper tension, alignment, and smoothness for precise Laser Punching.</li>
+          <li><strong>Laser Cutting:</strong> Our powerful laser beam precisely cuts the fabric, following the intricate digital patterns, resulting in clean edges and precise shapes.</li>
+          <li><strong>Punching:</strong> Simultaneously, our advanced punching machine uses punches and dies to create holes, perforations, or decorative features on the fabric, enhancing its functionality and aesthetic appeal.</li>
+          <li><strong>Finishing Touches:</strong> Once Laser Punching is complete, our skilled craftsmen add any necessary final touches, ensuring each fabric piece meets your exact specifications.</li>
+        </ol>
+        
+        <p><strong>By employing Laser Punching technology in fabric fabrication, we offer a range of remarkable advantages:</strong></p>
+        
+        <ul class="list-disc list-inside space-y-2 ml-4">
+          <li><strong>Unparalleled Precision:</strong> Laser Punching delivers clean, accurate cuts, and precise perforations, even on delicate or intricate fabric designs.</li>
+          <li><strong>Design Freedom:</strong> Our Laser Punching capabilities unlock a world of design possibilities, allowing for complex patterns, decorative elements, and customization that elevates your fabric products.</li>
+          <li><strong>Increased Efficiency:</strong> Laser Punching automates the fabric fabrication process, reducing production time and increasing overall efficiency, ensuring prompt delivery of your orders.</li>
+          <li><strong>Enhanced Functionality:</strong> With precise punching, we can incorporate functional features like ventilation, moisture control, or attachment points in the fabric, enhancing its performance and utility.</li>
+          <li><strong>Diverse Applications:</strong> Laser Punching technology is suitable for various fabric applications, including apparel, home textiles, upholstery, automotive interiors, and more.</li>
+        </ul>
+        
+        <p>Join us on the cutting edge of fabric fabrication by experiencing the power of Laser Punching. Our expertise, combined with this state-of-the-art technology, ensures that your fabric products meet the highest standards of precision and innovation.</p>
+        
+        <p>Contact us today to discuss your fabric requirements and discover how Laser Punching can revolutionize your fabric-based project</p>
+      </div>
+      
+      <!-- Clear float and button -->
+      <div class="clear-both mt-8 text-center">
+        <a href="/contact-us/" class="inline-flex items-center justify-center border-2 border-[#1D2F40] text-[#1D2F40] hover:bg-[#1D2F40] hover:text-white font-nav text-[14px] font-semibold tracking-[2px] uppercase py-[12px] px-[30px] transition-colors">
+          CONTACT US
+        </a>
       </div>
     </div>
   </section>

@@ -1,91 +1,86 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
 <Layout title="Sublimation Printing | ICM Factory Direct">
   <!-- Hero Section -->
-  <section class="relative pt-32 pb-24 bg-navy-900 overflow-hidden">
-    <div class="absolute inset-0 z-0">
-      <!-- Placeholder image for sublimation background -->
-      <img src="/images/projects/2bu-brand.jpg" alt="Sublimation Printing" class="w-full h-full object-cover opacity-30" />
-      <div class="absolute inset-0 bg-gradient-to-t from-navy-900 to-transparent"></div>
-    </div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-      <p class="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm mb-4">Vibrant & Permanent</p>
-      <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">Sublimation Printing</h1>
-      <p class="text-xl max-w-3xl mx-auto text-gray-300 font-light leading-relaxed">
-        Unlock limitless design possibilities with our advanced sublimation technology. Colors that never fade, peel, or crack.
-      </p>
-    </div>
-  </section>
+  <PageHero
+    title="Sublimation Printing"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Sublimation Printing" }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
 
-  <!-- Content Section -->
-  <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
+  <!-- What is Sublimation Section - Match Live Site -->
+  <section class="py-[80px] bg-white">
+    <div class="max-w-[1140px] mx-auto px-[15px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[40px] items-start">
+        <!-- Left Column: Content -->
         <div>
-          <h2 class="text-4xl font-extrabold text-navy-900 mb-6">What is Sublimation?</h2>
-          <p class="text-gray-600 text-lg leading-relaxed mb-6">
-            Dye sublimation is a digital printing process that uses heat to transfer dye onto materials. Unlike traditional screen printing where ink sits on top of the fabric, sublimation ink actually becomes part of the fabric itself.
-          </p>
-          <p class="text-gray-600 text-lg leading-relaxed mb-8">
-            The result? A completely breathable garment with vibrant, photo-quality designs that will withstand extreme athletic conditions without ever fading or cracking.
-          </p>
+          <h4 class="font-heading text-[28px] font-semibold leading-[1.3] text-[#1D2F40] mb-6">What is Sublimation?</h4>
           
-          <div class="space-y-6">
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold text-navy-900 mb-2">Unlimited Colors</h4>
-                <p class="text-gray-600">Print complex gradients, patterns, and high-resolution photographs at no extra cost per color.</p>
-              </div>
-            </div>
+          <div class="font-body text-[17.6px] leading-[1.7] text-[#4A4A4A] space-y-4">
+            <p>Sublimation printing is a versatile, digital printing method that opens up an endless opportunity to create unique and personalized headwear or garments. Whether it is the color of your product or personalized and branded decorations. The creative capabilities are yours for the taking.</p>
             
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold text-navy-900 mb-2">Zero Weight Added</h4>
-                <p class="text-gray-600">The dyes bond at the molecular level, ensuring the technical fabric retains 100% of its wicking properties.</p>
-              </div>
-            </div>
+            <p>We can only sublimation on fabrics made of polyester, or on specialty objects made of polyester or given a polyester coating. We print on onto a transfer medium and then heat and pressure are applied, the dye on the transfer sheet sublimates and is absorbed into the polyester itself; then your design becomes an actual part of the fabric to make your product for non-fade, vibrant image without adding and additional texture or weight.</p>
             
-            <div class="flex items-start gap-4">
-              <div class="w-12 h-12 bg-gold-50 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                <svg class="w-6 h-6 text-gold-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-              </div>
-              <div>
-                <h4 class="text-xl font-bold text-navy-900 mb-2">Extreme Durability</h4>
-                <p class="text-gray-600">Guaranteed to never peel off, wash out, or crack under stress. The print lasts as long as the garment itself.</p>
-              </div>
-            </div>
+            <p><strong>Benefits to our customers:</strong></p>
+            
+            <p><strong>1.</strong> We can do Full color on small runs and much cheaper than Screen Printing.</p>
+            
+            <p><strong>2.</strong> We can accommodate Smaller Orders and it makes reordering the sample design very easy as we will have your artwork on file.</p>
+            
+            <p><strong>3.</strong> Individual customizations that allow us to virtually print picture-quality artwork anywhere are you items.</p>
+            
+            <p><strong>4.</strong> Lighter hand. The nature of sublimation means that prints are never heavy or thick. The garment is unchanged by the process, save for the addition of your art.</p>
+            
+            <p><strong>5.</strong> Long lasting Durability, as there is no cracking or peeling in a sublimated print, they last as long as the headwear or garment.</p>
+            
+            <p><strong>Only Things to know:</strong></p>
+            
+            <p><strong>1.</strong> Sublimation Printing is done only on White colored fabrics which allows us to print on the entire fabric, which allows you to choose from the over 500 colors from the Pantone PMS ink we use. This also you to print virtually any design you can create or image and even photographic pictures can be sublimated and used in your designs. Really, any image you like.</p>
+            
+            <p><strong>2.</strong> Polyester garments only but these days the there are numerous hi-tech performance fabrics which are much lighter and offer moisture-wicking, UV protection, Antimicrobial and other benefits. Though it is true that this process only works on polyester, but these fabrics today are nothing like the ones of old. We have even offer "cotton-like" textured fabrics that sublimation-friendly polyester!</p>
+            
+            <p><strong>3.</strong> Higher price per piece in large runs. There comes a point when a large enough run of sublimation will become more expensive than traditional screen-printing. That said, even if the blanks are slightly more expensive, for small runs, the reduced setup fees often make sublimation more economical for full-color or photo-realistic designs.</p>
+          </div>
+          
+          <div class="mt-8 text-center">
+            <a href="/contact-us/" class="inline-flex items-center justify-center border-2 border-[#1D2F40] text-[#1D2F40] hover:bg-[#1D2F40] hover:text-white font-nav text-[14px] font-semibold tracking-[2px] uppercase py-[12px] px-[30px] transition-colors">
+              CONTACT US
+            </a>
           </div>
         </div>
         
-        <div class="relative">
-          <div class="aspect-w-3 aspect-h-4 bg-gray-100 rounded-2xl overflow-hidden shadow-2xl">
-            <!-- Using project image as placeholder for sublimation graphic -->
-            <img src="/images/projects/Super-League.png" alt="Sublimation Example" class="w-full h-full object-cover" />
+        <!-- Right Column: Image Boxes -->
+        <div class="space-y-8">
+          <!-- Color Charts -->
+          <div class="text-center">
+            <a href="/color-charts" class="block overflow-hidden rounded-[4px] shadow-lg hover:shadow-xl transition-shadow">
+              <img src="/images/color-charts.jpg" alt="Color Charts" class="w-full h-auto object-cover" />
+            </a>
+            <h3 class="font-heading text-[20px] font-semibold mt-4">
+              <a href="/color-charts" class="text-[#1D2F40] hover:text-[#A6587C] transition-colors">Color Charts</a>
+            </h3>
           </div>
-          <!-- Decorative element -->
-          <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-gold-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div class="absolute -top-6 -right-6 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          
+          <!-- Pattern Charts -->
+          <div class="text-center">
+            <div class="overflow-hidden rounded-[4px] shadow-lg cursor-pointer">
+              <a href="/images/pattern-charts.jpg" target="_blank" rel="noopener noreferrer">
+                <img src="/images/pattern-charts.jpg" alt="Pattern Charts" class="w-full h-auto object-cover hover:scale-105 transition-transform" />
+              </a>
+            </div>
+            <h3 class="font-heading text-[20px] font-semibold mt-4 text-[#1D2F40]">Pattern Charts</h3>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="py-20 bg-gray-50 text-center border-t border-gray-200">
-    <div class="max-w-4xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-navy-900 mb-4">Ready to Create Your Masterpiece?</h2>
-      <p class="text-xl text-gray-600 mb-8">Let our design team bring your wildest concepts to life using premium sublimation.</p>
-      <a href="/contact-us" class="bg-navy-900 text-white hover:bg-gold-500 hover:text-navy-900 px-10 py-4 rounded-full font-bold text-sm uppercase tracking-wider transition-all inline-block shadow-lg">
-        Start Your Project
-      </a>
     </div>
   </section>
 </Layout>

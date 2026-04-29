@@ -1,0 +1,69 @@
+---
+interface Breadcrumb {
+  label: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  breadcrumbs: Breadcrumb[];
+  backgroundImage: string;
+  overlayOpacity?: number;
+  overlayColor?: string;
+}
+
+const { 
+  title, 
+  breadcrumbs, 
+  backgroundImage, 
+  overlayOpacity = 0.5,
+  overlayColor = "#1D2F40"
+} = Astro.props;
+---
+
+<section class="relative min-h-[300px] md:min-h-[380px] flex items-center justify-center overflow-hidden">
+  <!-- Background Image -->
+  <div class="absolute inset-0 z-0">
+    <img 
+      src={backgroundImage} 
+      alt="" 
+      class="w-full h-full object-cover"
+      aria-hidden="true"
+    />
+  </div>
+  
+  <!-- Overlay -->
+  <div 
+    class="absolute inset-0 z-10"
+    style={`background-color: ${overlayColor}; opacity: ${overlayOpacity};`}
+  ></div>
+  
+  <!-- Content -->
+  <div class="relative z-20 w-full px-[15px] py-[100px] md:py-[120px]">
+    <div class="max-w-[1140px] mx-auto text-left">
+      <h1 class="font-heading text-[44px] md:text-[50px] lg:text-[56px] font-semibold leading-[1.1] text-white mb-[12px]">
+        {title}
+      </h1>
+      
+      <nav aria-label="Breadcrumb" class="font-body text-[17.6px] leading-[1.5]">
+        <p class="text-white/80">
+          {breadcrumbs.map((crumb, index) => (
+            <>
+              {index > 0 && <span class="mx-[8px] text-white/50">/</span>}
+              {crumb.href ? (
+                <a 
+                  href={crumb.href} 
+                  class="text-white/80 hover:text-[#A6587C] transition-colors inline"
+                >
+                  {crumb.label}
+                </a>
+              ) : (
+                <span class="text-white/90 inline">{crumb.label}</span>
+              )}
+            </>
+          ))}
+        </p>
+      </nav>
+    </div>
+  </div>
+</section>

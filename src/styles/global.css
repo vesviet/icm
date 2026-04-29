@@ -31,3 +31,120 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Mega Menu Styles - Match Live Site */
+.mega-menu-dropdown {
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 4px 4px;
+  border-top: 2px solid #A6587C;
+  min-width: 500px;
+  width: max-content;
+}
+
+.mega-menu-column-title {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1D2F40;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E5E5E5;
+  display: block;
+  white-space: nowrap;
+}
+
+.mega-menu-column-title:hover {
+  color: #A6587C;
+}
+
+.mega-menu-link {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #4A4A4A;
+  padding: 8px 0;
+  display: block;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.mega-menu-link:hover {
+  color: #A6587C;
+}
+
+/* Header specific fixes */
+.header-nav .group:hover .mega-menu-dropdown {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* CTA Section - Match Live Site (Elementor section 3b13d23d) */
+.cta-section-boxed {
+  position: relative;
+  padding: 100px 0;
+  background-image: url('/images/young-tailor-coworker-touchpad.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cta-section-boxed .elementor-background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(29, 47, 64, 0.85);
+  z-index: 1;
+}
+
+.cta-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.cta-heading {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cta-text {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 17.6px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 32px;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 36px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #FFFFFF;
+  color: #1D2F40;
+}

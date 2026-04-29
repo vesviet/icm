@@ -1,30 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import PageHero from '../components/PageHero.astro';
 ---
 
-<Layout title="Custom Hang Tags | ICM Factory Direct">
-  <section class="py-24 md:py-32 bg-navy-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-gold-400 font-bold uppercase tracking-[0.2em] text-sm mb-4">Retail Ready</p>
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Custom Hang Tags & Woven Labels</h1>
-        <p class="text-xl max-w-2xl mx-auto text-gray-300">
-          The final touch that elevates your product from a garment to a brand experience.
-        </p>
-      </div>
+<Layout title="Hang Tags | ICM Factory Direct">
+  <!-- Hero Section -->
+  <PageHero
+    title="Hang Tags"
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Hang Tags" }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors">
-          <h3 class="text-2xl font-bold text-gold-400 mb-4">Hang Tags</h3>
-          <p class="text-gray-300">Custom printed hang tags in any shape or size. Choose from various paper weights, finishes (matte, gloss, soft-touch), and string options (cotton, wax, plastic seal).</p>
+  <!-- Gallery Section - From XML -->
+  <section class="py-[80px] bg-white">
+    <div class="max-w-[1340px] mx-auto px-[15px]">
+      <h4 class="font-heading text-[24px] font-semibold leading-[1.3] text-[#1D2F40] mb-8 text-center">Custom Hang Tags</h4>
+      
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Golf Attack -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/golf-attack.jpg" alt="Golf Attack" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Golf Attack</h4>
+          </div>
         </div>
-        <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors">
-          <h3 class="text-2xl font-bold text-gold-400 mb-4">Woven Labels</h3>
-          <p class="text-gray-300">Premium damask woven labels sewn into the neck or hem. Available in straight cut, center fold, or end fold for a classic, durable branding solution.</p>
+
+        <!-- MITI -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/miti.jpg" alt="MITI" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">MITI</h4>
+          </div>
         </div>
-        <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-colors">
-          <h3 class="text-2xl font-bold text-gold-400 mb-4">Heat Press Labels</h3>
-          <p class="text-gray-300">Tagless neck labels applied via heat transfer. Perfect for activewear where comfort is paramount and woven labels might cause irritation.</p>
+
+        <!-- Revolutional -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/revolutional.jpg" alt="Revolutional" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Revolutional</h4>
+          </div>
+        </div>
+
+        <!-- Truttmann -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/truttmann.jpg" alt="Truttmann" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Truttmann</h4>
+          </div>
+        </div>
+
+        <!-- Eschler -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/eschler.jpg" alt="Eschler" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Eschler</h4>
+          </div>
+        </div>
+
+        <!-- F4B -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/f4b.jpg" alt="F4B" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">F4B</h4>
+          </div>
+        </div>
+
+        <!-- REGNA -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/regna.jpg" alt="REGNA" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">REGNA</h4>
+          </div>
+        </div>
+
+        <!-- HeiQ -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/heiq.jpg" alt="HeiQ" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">HeiQ</h4>
+          </div>
+        </div>
+
+        <!-- Greenplus -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/greenplus.jpg" alt="Greenplus" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">Greenplus</h4>
+          </div>
+        </div>
+
+        <!-- 2BU -->
+        <div class="group relative overflow-hidden rounded-[10px] border border-[#A6587C]">
+          <img src="/images/2bu.jpg" alt="2BU" class="w-full h-[300px] object-cover" />
+          <div class="p-4 bg-[#1D2F40]">
+            <h4 class="font-heading text-[18px] font-medium leading-[1.2] text-white text-center">2BU</h4>
+          </div>
         </div>
       </div>
     </div>

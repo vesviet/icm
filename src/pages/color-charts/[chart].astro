@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageHero from '../../components/PageHero.astro';
+import colorChartsData from '../../data/colorCharts.json';
+
+export function getStaticPaths() {
+  return [
+    { params: { chart: 'new-colors' }, props: { title: 'New Colors' } },
+    { params: { chart: 'pantone-pms-color-charts' }, props: { title: 'Pantone PMS Color Charts' } },
+    { params: { chart: 'metallic-colors' }, props: { title: 'Metallic Colors' } }
+  ];
+}
+
+const { chart } = Astro.params;
+const { title } = Astro.props;
+const chartData = colorChartsData[chart];
+---
+
+<Layout title={`${title} | Color Charts | ICM Factory Direct`}>
+  <PageHero
+    title={title}
+    breadcrumbs={[
+      { label: "Home", href: "/" },
+      { label: "Product Features", href: "#" },
+      { label: "Sublimation", href: "/sublimation" },
+      { label: "Color Charts", href: "/color-charts" },
+      { label: title }
+    ]}
+    backgroundImage="/images/worker-in-textile-industry-sewing-FQEGPTY-1.jpg"
+    overlayOpacity={0.6}
+    overlayColor="#1D2F40"
+  />
+
+  <section class="py-[80px] bg-[#F9F9F9]">
+    <div class="max-w-[1340px] mx-auto px-[15px]">
+      <div class="bg-white p-8 md:p-12 shadow-md rounded-[8px] prose max-w-none prose-headings:font-heading prose-headings:text-[#1D2F40] prose-p:font-body prose-p:text-[#4A4A4A] prose-a:text-[#A6587C]">
+        <Fragment set:html={chartData?.html || '<p>Content not found.</p>'} />
+      </div>
+    </div>
+  </section>
+</Layout>
