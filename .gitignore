@@ -29,3 +29,8 @@ pnpm-debug.log*
 # agent skills (symlink to external pack)
 .agent/
 tmp/
+CLAUDE.md*
+AGENTS.md*
+.claude
+.gemini
+.gemini-workspace

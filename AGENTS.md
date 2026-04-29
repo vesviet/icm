@@ -31,6 +31,7 @@ Available roles: `.agent/role/README.md`
 
 Skills are organized under `.agent/skills/` in taxonomy folders:
 
+- `.agent/skills/agent/` — Agent context management, memory compaction, tool orchestration, quality gates, and handoff
 - `.agent/skills/foundation/` — Portable skills for all roles (commit, review, test, navigate, troubleshoot)
 - `.agent/skills/backend/` — API, event, integration, and service scaffolding
 - `.agent/skills/frontend/` — UI components, pages, API client integration, frontend testing
