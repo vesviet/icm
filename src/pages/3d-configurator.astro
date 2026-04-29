@@ -3,37 +3,70 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="3D Configurator | ICM Factory Direct">
-  <section class="py-24 bg-gray-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-navy-900 mb-6">Interactive 3D Configurator</h1>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-        Visualize your custom designs in real-time. Our 3D tool allows you to rotate, zoom, and customize garments before production begins.
-      </p>
-      
-      <!-- 3D Configurator Embed Placeholder -->
-      <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-8 border border-gray-200">
-        <div class="aspect-w-16 aspect-h-9 bg-gray-900 rounded-xl overflow-hidden relative flex items-center justify-center">
-          <!-- In a real implementation, this would be an iframe or WebGL canvas -->
-          <div class="text-center text-white p-8">
-            <svg class="w-20 h-20 mx-auto text-gold-400 mb-4 animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5"/></svg>
-            <h2 class="text-2xl font-bold mb-2">3D Engine Loading...</h2>
-            <p class="text-gray-400">Interactive viewer will initialize here.</p>
+  <section class="py-[52.8px] bg-white">
+    <div class="max-w-[1340px] w-full mx-auto px-[10px]">
+      <div class="text-center mb-10">
+        <h1 class="font-heading text-[52.8px] font-semibold leading-[1.2] text-[#1D2F40] mb-3">3D Configurator</h1>
+        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575]">Home / 3D Configutator</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-12">
+        <div>
+          <h2 class="font-heading text-[38px] md:text-[44px] font-semibold leading-[1.2] text-[#1D2F40] mb-3">Design Your Own</h2>
+          <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-6">Welcome to our 3D Configurator for Sportswear! With our innovative tool, you can unleash your creativity and design personalized sportswear that reflects your unique style and brand.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="/contact-us/" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
+            <a href="/contact-us/" class="inline-flex items-center justify-center border border-[#A6587C] text-[#A6587C] hover:bg-[#A6587C] hover:text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Contact us</a>
           </div>
         </div>
+
+        <div class="overflow-hidden border border-[#A6587C]">
+          <img src="/images/professional-sewing-machine-close-up-modern-textil-F9BVMW7-1.jpg" alt="3D Configurator banner" class="w-full h-[300px] md:h-[360px] object-cover" />
+        </div>
       </div>
-      
-      <div class="mt-16 grid md:grid-cols-3 gap-8 text-left">
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <h3 class="text-xl font-bold text-navy-900 mb-3">Real-time Rendering</h3>
-          <p class="text-gray-600">See pattern changes, color swaps, and logo placements instantly on a photorealistic 3D model.</p>
+
+      <div class="mb-12">
+        <h3 class="font-heading text-[32px] md:text-[38px] font-semibold leading-[1.2] text-[#1D2F40] mb-5">3D Configurator</h3>
+        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-6">Our 3D configurator takes customization to the next level by allowing you to interact with and modify 3D models of sportswear items.</p>
+
+        <h4 class="font-heading text-[24px] font-medium leading-[1.2] text-[#1D2F40] mb-3">Features:</h4>
+        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-3">With these intuitive features, including the ability to add text and share your designs:</p>
+        <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-8 mb-6 font-body text-[17.6px] leading-[1.5] text-[#757575]">
+          <li>Import Drag and Drop Logo</li>
+          <li>Zoom In and Out</li>
+          <li>Select Section on Patern</li>
+          <li>Change Color</li>
+          <li>Import Artwork</li>
+          <li>Add Text</li>
+          <li>4 Ways Artwork Moves</li>
+          <li>Sharable Design Link</li>
+        </ul>
+
+        <div class="space-y-4 font-body text-[17.6px] leading-[1.5] text-[#757575]">
+          <p>With our intuitive interface, you can easily import, drag and drop your logo onto the 3D model, instantly seeing how it will look on the garment. Whether it is your team's logo, a sponsor emblem, or a custom design, you have full control over its placement, size, and orientation.</p>
+          <p>Not only can you place the logo, but you can also play with colors and patterns. Change the color of the garment, experiment with different pattern options, and see the immediate visual impact on the 3D model.</p>
+          <p>In addition to logos and colors, our 3D configurator allows you to add text to the sportswear. Whether it is player names, numbers, inspirational quotes, or team mottos, you can easily input and visualize the text on the 3D model.</p>
+          <p>Our 3D configurator offers a dynamic and immersive experience, enabling you to see your custom sportswear come to life before your eyes. You can view the garment from different angles, zoom in for close-ups, and rotate it to ensure every detail meets your expectations.</p>
+          <p>Please note that the availability of customization options may vary depending on the specific sportswear item or category provided by ICM.</p>
         </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <h3 class="text-xl font-bold text-navy-900 mb-3">360° Viewing</h3>
-          <p class="text-gray-600">Rotate the garment to inspect every seam, panel, and detail from any angle.</p>
-        </div>
-        <div class="bg-white p-8 rounded-xl shadow-sm">
-          <h3 class="text-xl font-bold text-navy-900 mb-3">Export Ready</h3>
-          <p class="text-gray-600">Approve designs directly from the viewer and generate tech packs for immediate production.</p>
+      </div>
+
+      <div class="bg-[#F2F2F2] border border-[#A6587C] p-6 md:p-8 mb-12">
+        <h4 class="font-heading text-[24px] md:text-[28px] font-medium leading-[1.2] text-[#1D2F40] mb-4">Looking for Expert 3D Designers for Your Sportswear?</h4>
+        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-4">Your sportswear designs to the next level, look no further. At ICM Factory Direct, we understand the importance of creating realistic and eye-catching 3D sportswear models. That is why we offer the expertise of our skilled 3D designers who are well-versed in the latest software and industry trends.</p>
+        <p class="font-body text-[17.6px] leading-[1.5] text-[#757575] mb-5">With our team of experts, you can collaborate and transform your sportswear concepts into stunning 3D visualizations. Whether you need help with intricate details, precise measurements, or showcasing different color options, our designers will bring your vision to life with precision and creativity.</p>
+
+        <h5 class="font-heading text-[22px] font-medium leading-[1.2] text-[#1D2F40] mb-3">Deliverable:</h5>
+        <ul class="list-disc pl-6 space-y-2 font-body text-[17.6px] leading-[1.5] text-[#757575] mb-6">
+          <li>3D object file in any format</li>
+          <li>Embeded code on your site</li>
+          <li>Sharable Link</li>
+          <li>3 Months free revision</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="/contact-us/" class="inline-flex items-center justify-center bg-[#A6587C] hover:bg-[#7D405C] text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Design Your Own</a>
+          <a href="/contact-us/" class="inline-flex items-center justify-center border border-[#A6587C] text-[#A6587C] hover:bg-[#A6587C] hover:text-[#F4F4F4] font-nav text-[17.6px] font-semibold uppercase tracking-[1px] py-[14px] px-[30px] transition-colors">Contact us</a>
         </div>
       </div>
     </div>

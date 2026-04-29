@@ -3,116 +3,151 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Sizing Charts | ICM Factory Direct">
-  <section class="py-24 bg-white text-center">
-    <div class="max-w-4xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-extrabold text-navy-900 mb-6">Sizing & Fit Guides</h1>
-      <p class="text-xl text-gray-600 mb-12">
-        Ensure the perfect fit for your custom apparel. Review our standard measurements below.
-      </p>
-      
-      <div class="space-y-12 text-left">
-        <!-- Men's Chart -->
-        <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h2 class="text-2xl font-bold text-navy-900 mb-6 border-b pb-4">Men's Standard Sizing</h2>
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm text-left text-gray-600">
-              <thead class="text-xs text-white uppercase bg-navy-900">
-                <tr>
-                  <th class="px-6 py-4 rounded-tl-lg">Size</th>
-                  <th class="px-6 py-4">Chest (in)</th>
-                  <th class="px-6 py-4">Waist (in)</th>
-                  <th class="px-6 py-4 rounded-tr-lg">Hip (in)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="bg-white border-b">
-                  <td class="px-6 py-4 font-bold">Small (S)</td>
-                  <td class="px-6 py-4">35 - 37</td>
-                  <td class="px-6 py-4">29 - 31</td>
-                  <td class="px-6 py-4">35 - 37</td>
-                </tr>
-                <tr class="bg-gray-50 border-b">
-                  <td class="px-6 py-4 font-bold">Medium (M)</td>
-                  <td class="px-6 py-4">38 - 40</td>
-                  <td class="px-6 py-4">32 - 34</td>
-                  <td class="px-6 py-4">38 - 40</td>
-                </tr>
-                <tr class="bg-white border-b">
-                  <td class="px-6 py-4 font-bold">Large (L)</td>
-                  <td class="px-6 py-4">41 - 43</td>
-                  <td class="px-6 py-4">35 - 37</td>
-                  <td class="px-6 py-4">41 - 43</td>
-                </tr>
-                <tr class="bg-gray-50 border-b">
-                  <td class="px-6 py-4 font-bold">X-Large (XL)</td>
-                  <td class="px-6 py-4">44 - 46</td>
-                  <td class="px-6 py-4">38 - 40</td>
-                  <td class="px-6 py-4">44 - 46</td>
-                </tr>
-                <tr class="bg-white">
-                  <td class="px-6 py-4 font-bold rounded-bl-lg">2X-Large (2XL)</td>
-                  <td class="px-6 py-4">47 - 49</td>
-                  <td class="px-6 py-4">41 - 43</td>
-                  <td class="px-6 py-4 rounded-br-lg">47 - 49</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Women's Chart -->
-        <div class="bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-200">
-          <h2 class="text-2xl font-bold text-navy-900 mb-6 border-b pb-4">Women's Standard Sizing</h2>
-          <div class="overflow-x-auto">
-            <table class="w-full text-sm text-left text-gray-600">
-              <thead class="text-xs text-white uppercase bg-navy-900">
-                <tr>
-                  <th class="px-6 py-4 rounded-tl-lg">Size</th>
-                  <th class="px-6 py-4">Chest (in)</th>
-                  <th class="px-6 py-4">Waist (in)</th>
-                  <th class="px-6 py-4 rounded-tr-lg">Hip (in)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="bg-white border-b">
-                  <td class="px-6 py-4 font-bold">X-Small (XS)</td>
-                  <td class="px-6 py-4">31.5 - 32.5</td>
-                  <td class="px-6 py-4">24 - 25</td>
-                  <td class="px-6 py-4">34 - 35</td>
-                </tr>
-                <tr class="bg-gray-50 border-b">
-                  <td class="px-6 py-4 font-bold">Small (S)</td>
-                  <td class="px-6 py-4">33.5 - 34.5</td>
-                  <td class="px-6 py-4">26 - 27</td>
-                  <td class="px-6 py-4">36 - 37</td>
-                </tr>
-                <tr class="bg-white border-b">
-                  <td class="px-6 py-4 font-bold">Medium (M)</td>
-                  <td class="px-6 py-4">35.5 - 37.5</td>
-                  <td class="px-6 py-4">28 - 30</td>
-                  <td class="px-6 py-4">38 - 40</td>
-                </tr>
-                <tr class="bg-gray-50 border-b">
-                  <td class="px-6 py-4 font-bold">Large (L)</td>
-                  <td class="px-6 py-4">38.5 - 40.5</td>
-                  <td class="px-6 py-4">31 - 33</td>
-                  <td class="px-6 py-4">41 - 43</td>
-                </tr>
-                <tr class="bg-white">
-                  <td class="px-6 py-4 font-bold rounded-bl-lg">X-Large (XL)</td>
-                  <td class="px-6 py-4">41.5 - 44</td>
-                  <td class="px-6 py-4">34 - 36.5</td>
-                  <td class="px-6 py-4 rounded-br-lg">44 - 46.5</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+  <!-- Hero Section -->
+  <section class="relative flex items-center min-h-[50vh] bg-cover bg-center" style="background-image: url('https://icmfactorydirect.com/wp-content/uploads/2023/05/worker-in-textile-industry-sewing-FQEGPTY-1.jpg');">
+    <div class="absolute inset-0 bg-navy-900 opacity-50 transition-opacity duration-300"></div>
+    <div class="relative z-10 w-full max-w-[1340px] mx-auto px-4 lg:px-0">
+      <div class="p-4">
+        <h1 class="text-[#F4F4F4] font-heading font-semibold text-[3rem] lg:text-[4rem] leading-[1.2em] mb-0">
+          Sizing Charts
+        </h1>
+        <div class="text-[#F4F4F4] font-sans text-[1rem] lg:text-[1.1rem] -mt-1">
+          <p><a href="/" class="text-[#F4F4F4] hover:text-[#A6587C] transition-colors duration-300">Home</a> / Sizing Charts</p>
         </div>
       </div>
-      
-      <div class="mt-12 text-gray-500 italic">
-        * Note: These are general guidelines. Custom sizing runs and specific fit options (Relaxed, Athletic, Compression) are available upon request.
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="overflow-hidden py-[1em]">
+    <div class="w-full max-w-[1340px] mx-auto px-4 lg:px-0">
+      <div class="p-[1em] flex justify-center">
+        <img loading="lazy" decoding="async" width="800" height="512" src="https://icmfactorydirect.com/wp-content/uploads/2023/07/Cap.png" class="max-w-full h-auto" alt="Cap" title="Sizing Charts 1" />
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="elementor-section elementor-top-section elementor-element elementor-element-104e3fd1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="104e3fd1" data-element_type="section" data-e-type="section" data-settings='{"background_background":"classic"}'>
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+      <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1a9e27fd" data-id="1a9e27fd" data-element_type="column" data-e-type="column">
+        <div class="elementor-widget-wrap elementor-element-populated">
+          <div class="elementor-element elementor-element-3ffd4075 elementor-widget elementor-widget-heading" data-id="3ffd4075" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
+            <h3 class="elementor-heading-title elementor-size-default">Let's Make Your Sportswear That's Sells Itself.</h3>
+          </div>
+          <div class="elementor-element elementor-element-4daf79e2 elementor-widget elementor-widget-text-editor" data-id="4daf79e2" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
+            <p>Take your Sportswear Line to the next level. Discover the power of Tailor-Made Sportswear solutions. Ready to make your mark? Contact us today!</p>
+          </div>
+          <div class="elementor-element elementor-element-440d9b7 elementor-align-center elementor-widget elementor-widget-button" data-id="440d9b7" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
+            <a class="elementor-button elementor-button-link elementor-size-sm" href="/contact-us/">
+              <span class="elementor-button-content-wrapper">
+                <span class="elementor-button-text">CONTACT US</span>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </Layout>
+
+<style is:global>
+  .elementor-element-104e3fd1 {
+    position: relative;
+    background-image: url("https://icmfactorydirect.com/wp-content/uploads/2023/05/young-tailor-and-his-coworker-using-touchpad-while-39JZT9P-1.jpg");
+    background-position: center center;
+    background-size: cover;
+    padding: 6em 1em;
+  }
+  @media(min-width: 1025px) {
+    .elementor-element-104e3fd1 {
+      background-attachment: fixed;
+    }
+  }
+  .elementor-element-104e3fd1 .elementor-background-overlay {
+    background-color: #1D2F40;
+    opacity: 0.5;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .elementor-element-104e3fd1 .elementor-container {
+    max-width: 1340px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+  }
+  .elementor-element-1a9e27fd > .elementor-element-populated {
+    padding: 1em;
+  }
+  .elementor-element-3ffd4075 {
+    margin: 0 11em 20px 11em;
+    text-align: center;
+  }
+  .elementor-element-3ffd4075 .elementor-heading-title {
+    color: #F4F4F4;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 3.3rem;
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0;
+  }
+  .elementor-element-4daf79e2 {
+    margin: 0 17em 20px 17em;
+    text-align: center;
+    color: #D9D9D9;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+  .elementor-element-440d9b7 {
+    text-align: center;
+  }
+  .elementor-element-440d9b7 .elementor-button {
+    background-color: #A6587C;
+    color: #F4F4F4;
+    font-family: "Yantramanav", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1em;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 18px 20px;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  .elementor-element-440d9b7 .elementor-button:hover {
+    background-color: #7D405C;
+  }
+  
+  @media(max-width: 1024px) {
+    .elementor-element-104e3fd1 .elementor-container {
+      max-width: 1024px;
+    }
+    .elementor-element-3ffd4075 {
+      margin: 0 0 20px 0;
+    }
+    .elementor-element-3ffd4075 .elementor-heading-title {
+      font-size: 2.7rem;
+    }
+    .elementor-element-4daf79e2 {
+      margin: 0 2em 20px 2em;
+    }
+  }
+  
+  @media(max-width: 767px) {
+    .elementor-element-104e3fd1 .elementor-container {
+      max-width: 767px;
+    }
+    .elementor-element-3ffd4075 .elementor-heading-title {
+      font-size: 2rem;
+    }
+    .elementor-element-4daf79e2 {
+      margin: 0 0.5em 20px 0.5em;
+    }
+  }
+</style>
